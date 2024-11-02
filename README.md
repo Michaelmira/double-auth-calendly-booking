@@ -1,3 +1,30 @@
+# Directions for Google Scheduling.
+
+- pip install google-auth-oauthlib google-auth-httplib2 google-api-python-client
+- Add .env variables below
+1. GOOGLE_CLIENT_ID=your_client_id
+2. GOOGLE_CLIENT_SECRET=your_client_secret
+3. GOOGLE_REDIRECT_URI=your_redirect_uri
+
+* https://cloud.google.com/cloud-console
+- Create a new project in Google Cloud Console
+- Enable Google Calendar API
+- Create OAuth 2.0 credentials
+- Download the client secrets JSON file
+
+- add to modals.py User calendar_credentials = db.Column(db.JSON)
+- add whole class appointments to modals.py  (See Modals.py)
+
+- add to Routes.py imports, 
+
+
+
+
+
+
+
+
+
 # WebApp boilerplate with React JS and Flask API
 
 Build web applications using React.js for the front end and python/flask for your backend API.
